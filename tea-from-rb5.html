@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea from RB5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1e 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ffb6c1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            letter-spacing: 2px;
+        }
+
+        main {
+            flex: 1;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+            width: 100%;
+        }
+
+        .tea-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .tea-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 1.5rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .tea-image {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        .tea-name {
+            font-size: 1.8rem;
+            color: #ffeb99;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .tea-subtitle {
+            font-size: 1.1rem;
+            color: #87ceeb;
+            margin-bottom: 1rem;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .steeping-instructions {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+        }
+
+        .steeping-instructions h3 {
+            color: #ffb6c1;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .steeping-instructions p {
+            line-height: 1.8;
+            color: #e0e0e0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.3);
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .tea-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tea from RB5</h1>
+    </header>
+
+    <main>
+        <div class="tea-container">
+            <!-- Happy Day Tea -->
+            <div class="tea-card">
+                <img src="Tea-happy_day.jpg" alt="Happy Day Tea" class="tea-image">
+                <h2 class="tea-name">Happy Day</h2>
+                <p class="tea-subtitle">Clarity, creativity, calm, luck, success</p>
+                <div class="steeping-instructions">
+                    <h3>Steeping Instructions</h3>
+                    <p><strong>Ingredients:</strong> Pea flower, orange, chamomile, jasmine, lavender</p>
+                    <p><strong>Water Temperature:</strong> 200°F (93°C)</p>
+                    <p><strong>Steep Time:</strong> 5-7 minutes</p>
+                    <p><strong>Serving:</strong> Enjoy hot or iced. Add lemon to watch the color magically change from blue to purple!</p>
+                </div>
+            </div>
+
+            <!-- Meaningful Connection Tea -->
+            <div class="tea-card">
+                <img src="Tea-meaningful-connections.jpg" alt="Meaningful Connection Tea" class="tea-image">
+                <h2 class="tea-name">Meaningful Connection</h2>
+                <p class="tea-subtitle">Love, friendship, peace, communication</p>
+                <div class="steeping-instructions">
+                    <h3>Steeping Instructions</h3>
+                    <p><strong>Ingredients:</strong> Earl Grey, rose, lavender, cardamom</p>
+                    <p><strong>Water Temperature:</strong> 200°F (93°C)</p>
+                    <p><strong>Steep Time:</strong> 3-5 minutes</p>
+                    <p><strong>Serving:</strong> Delicious on its own or with a touch of maple syrup or agave. Can be enjoyed with oat or almond milk.</p>
+                </div>
+            </div>
+
+            <!-- New Perspectives Tea -->
+            <div class="tea-card">
+                <img src="Tea-new-perspectives.jpg" alt="New Perspectives Tea" class="tea-image">
+                <h2 class="tea-name">New Perspectives</h2>
+                <p class="tea-subtitle">Insight, strength, positive change</p>
+                <div class="steeping-instructions">
+                    <h3>Steeping Instructions</h3>
+                    <p><strong>Ingredients:</strong> Balsam fir, cinnamon, orange, clove</p>
+                    <p><strong>Water Temperature:</strong> 205°F (96°C)</p>
+                    <p><strong>Steep Time:</strong> 5-7 minutes</p>
+                    <p><strong>Serving:</strong> This warming blend is excellent on cold days. Sweetens nicely with maple syrup or date syrup if desired.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Emily LeBlanc, 2025</p>
+    </footer>
+</body>
+</html>
